@@ -3,4 +3,47 @@
 <head>
 <title> ~~~~xor~~~~ </title>
 <body>
-<input type="checkbox" onclick="xor()"/><br><input type="checkbox" onclick="xor()"/>
+  <p id="x"></P>
+<input type="checkbox" onclick="xor()"/><br><input type="checkbox" onclick="xor2()"/>
+</body>
+<script type="text/javascript">
+  var xorb == false;
+  var xorn = false;
+  function xor(){
+    if(xorn == true){
+      xorn == false
+      out()
+    }
+    if(xorn == false){
+      xorn == true
+      out()
+    }
+  }
+  function xor2(){
+    if(xorb == true){
+      xorb == false
+      out()
+    }
+    if(xorb == false){
+      xorb == true
+      out()
+    }
+  }
+  function out(){
+    if(xorb == true){
+      if(xorn == true){
+        document.getElementById("x").innerHTML = "0"
+      }
+      if(xorn == false){
+        document.getElementById("x").innerHTML = "1"
+      }
+    }
+    if(xorb == false){
+      if(xorn == true){
+        document.getElementById("x").innerHTML = "1"
+      }
+      if(xorn == false){
+        document.getElementById("x").innerHTML = "0"
+      }
+    }
+  }
